@@ -88,6 +88,7 @@ const Option = React.createClass({
 				id={instancePrefix + '-option-' + optionIndex}
 				title={option.title}>
 				{this.props.children}
+				{ option.create ? this.props.addLabelText.replace('{label}', option.label) : this.props.children }
 			</div>
 		);
 	}
