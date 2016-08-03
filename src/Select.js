@@ -893,7 +893,7 @@ const Select = React.createClass({
 			let addNewOption = true;
 			//NOTE: only add the "Add" option if none of the options are an exact match
 			filteredOptions.map(option => {
-				if (String(option[this.props.labelKey).toLowerCase() === filterValue || String(option[this.props.valueKey]).toLowerCase() === filterValue) {
+				if (String(option[this.props.labelKey]).toLowerCase() === filterValue || String(option[this.props.valueKey]).toLowerCase() === filterValue) {
 					addNewOption = false;
 				}
 			});
